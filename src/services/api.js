@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // Dirección del backend desde variable de entorno o localhost por defecto
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:4000/api';
+const API_URL = import.meta.env.VITE_API_URL ;
 
 // Cliente Axios preconfigurado
 const api = axios.create({
