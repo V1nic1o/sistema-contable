@@ -1,0 +1,20 @@
+/* src/pages/Dashboard/Dashboard.css */
+
+.dashboard-main {
+  margin-left: 200px;
+  margin-top: 60px;
+  padding: 24px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.dashboard-main h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.dashboard-main p {
+  font-size: 15px;
+  color: #666;
+}

@@ -1,0 +1,112 @@
+/* === Layout general === */
+.dashboard-container {
+  padding: 32px;
+  background: linear-gradient(to bottom right, #f5f7fa, #e4ecf3);
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* === Título principal === */
+.dashboard-title {
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 28px;
+  color: #2e3a59;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
+}
+
+/* === Información del ejercicio activo === */
+.ejercicio-info {
+  background-color: #e1f8e8;
+  border-left: 6px solid #43a047;
+  padding: 14px 20px;
+  border-radius: 10px;
+  margin-bottom: 28px;
+  font-size: 17px;
+  color: #256029;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* === Estado sin ejercicio === */
+.no-ejercicio {
+  background-color: #fff8e1;
+  color: #a18800;
+  padding: 14px 20px;
+  border-left: 6px solid #ffc107;
+  border-radius: 10px;
+  margin-bottom: 28px;
+  font-size: 17px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* === Grid responsiva para tarjetas === */
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  margin-top: 20px;
+}
+
+/* === Estilo moderno para tarjetas === */
+.kpi-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid transparent;
+}
+
+.kpi-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(120deg, rgba(255,255,255,0.05), rgba(255,255,255,0));
+  transition: all 0.4s ease-in-out;
+  z-index: 0;
+}
+
+.kpi-card:hover::before {
+  left: 100%;
+}
+
+.kpi-card:hover {
+  transform: translateY(-4px);
+  border: 1px solid #e0e0e0;
+}
+
+/* === Texto dentro de cada tarjeta === */
+.kpi-label {
+  font-size: 17px;
+  font-weight: 600;
+  color: #616161;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.kpi-value {
+  font-size: 28px;
+  font-weight: 800;
+  position: relative;
+  z-index: 1;
+}
+
+/* === Colores según tipo === */
+.kpi-card.ingresos .kpi-value {
+  color: #2e7d32;
+}
+
+.kpi-card.egresos .kpi-value {
+  color: #c62828;
+}
+
+.kpi-card.balance .kpi-value {
+  color: #1565c0;
+}

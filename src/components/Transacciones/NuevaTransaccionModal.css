@@ -1,0 +1,114 @@
+/* src/components/Transacciones/NuevaTransaccionModal.css */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 24px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 720px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.modal-content h2 {
+  font-size: 20px;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.modal-error {
+  color: #d32f2f;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.modal-row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.modal-row input,
+.modal-row select,
+.full-width {
+  width: 100%;
+}
+
+input,
+select,
+textarea {
+  padding: 10px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.detalles-container {
+  margin-bottom: 16px;
+}
+
+.detalle-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.detalle-row select,
+.detalle-row input {
+  flex: 1;
+}
+
+.btn {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn.eliminar {
+  background: none;
+  color: #f44336;
+  font-weight: bold;
+}
+
+.btn.cancel {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.btn.guardar {
+  background-color: #4caf50;
+  color: white;
+}
+
+.btn.texto-link {
+  background: none;
+  color: #007bff;
+  font-size: 14px;
+  padding: 6px 0;
+  border: none;
+  cursor: pointer;
+}
+
+.btn.texto-link:hover {
+  text-decoration: underline;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}

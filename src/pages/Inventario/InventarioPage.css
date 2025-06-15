@@ -1,0 +1,196 @@
+/* === Encabezado de la página === */
+.inventario-page h1 {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 24px;
+  color: #333;
+}
+
+/* === Botón nuevo producto === */
+.btn.agregar {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 15px;
+  margin-bottom: 20px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn.agregar:hover {
+  background-color: #0056b3;
+}
+
+/* === Tabla === */
+.tabla-productos {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+  margin-bottom: 32px;
+}
+
+.tabla-productos th,
+.tabla-productos td {
+  padding: 14px 18px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+  font-size: 15px;
+}
+
+.tabla-productos th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+  color: #444;
+}
+
+.tabla-productos tr:hover {
+  background-color: #fafafa;
+}
+
+/* === Acciones agrupadas === */
+.tabla-productos td:last-child {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* === Botones pequeños === */
+.btn.pequeño {
+  padding: 6px 14px;
+  font-size: 13px;
+  border-radius: 6px;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.2s ease;
+}
+
+.btn.pequeño.btn {
+  background-color: #007bff;
+}
+
+.btn.pequeño.btn:hover {
+  background-color: #0056b3;
+}
+
+.btn.editar {
+  background-color: #ffc107;
+}
+
+.btn.editar:hover {
+  background-color: #e0a800;
+}
+
+.btn.eliminar {
+  background-color: #dc3545;
+}
+
+.btn.eliminar:hover {
+  background-color: #c82333;
+}
+
+.btn.historial {
+  background-color: #6f42c1;
+}
+
+.btn.historial:hover {
+  background-color: #5a32a3;
+}
+
+/* === Tarjetas de formularios (editar / nuevo producto) === */
+.card-editar-producto,
+.card-nuevo-producto {
+  background: #ffffff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  padding: 24px;
+  border-radius: 12px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.card-editar-producto h3,
+.card-nuevo-producto h3 {
+  margin-top: 0;
+  font-size: 20px;
+  color: #222;
+}
+
+.card-editar-producto input,
+.card-editar-producto textarea,
+.card-editar-producto select,
+.card-nuevo-producto input,
+.card-nuevo-producto textarea,
+.card-nuevo-producto select {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: inherit;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* === Botones dentro de formularios === */
+.card-editar-producto .btn,
+.card-nuevo-producto .btn {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.card-editar-producto .btn.guardar,
+.card-nuevo-producto .btn.guardar {
+  background-color: #007bff;
+  color: white;
+  border: none;
+}
+
+.card-editar-producto .btn.guardar:hover,
+.card-nuevo-producto .btn.guardar:hover {
+  background-color: #0056b3;
+}
+
+.card-editar-producto .btn.cancelar,
+.card-nuevo-producto .btn.cancelar {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+}
+
+.card-editar-producto .btn.cancelar:hover,
+.card-nuevo-producto .btn.cancelar:hover {
+  background-color: #495057;
+}
+
+/* === Responsive === */
+@media (max-width: 600px) {
+  .tabla-productos th,
+  .tabla-productos td {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .tabla-productos td:last-child {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .btn.pequeño {
+    width: 100%;
+  }
+}

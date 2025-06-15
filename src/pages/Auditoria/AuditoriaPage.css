@@ -1,0 +1,100 @@
+/* === Contenedor principal === */
+.auditoria-container {
+  padding: 32px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9fafb;
+  min-height: 100vh;
+}
+
+/* === Título === */
+.auditoria-header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 28px;
+  color: #2c3e50;
+}
+
+/* === Filtros responsivos === */
+.auditoria-filtros {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.auditoria-filtros select,
+.auditoria-filtros input[type="date"] {
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: #fff;
+  transition: border-color 0.2s ease;
+}
+
+.auditoria-filtros select:focus,
+.auditoria-filtros input[type="date"]:focus {
+  outline: none;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+}
+
+/* === Tabla de auditoría === */
+.auditoria-tabla {
+  background-color: #fff;
+  border-radius: 12px;
+  overflow-x: auto;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+}
+
+.auditoria-tabla table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.auditoria-tabla thead {
+  background: linear-gradient(to right, #f3f4f6, #f8fafc);
+}
+
+.auditoria-tabla th {
+  padding: 14px;
+  text-align: left;
+  font-weight: 600;
+  color: #374151;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.auditoria-tabla td {
+  padding: 14px;
+  color: #4b5563;
+  border-top: 1px solid #f3f4f6;
+  white-space: nowrap;
+}
+
+/* === Acciones en colores === */
+td.capitalize {
+  text-transform: capitalize;
+}
+
+td.capitalize::first-letter {
+  font-weight: bold;
+}
+
+td.capitalize[data-accion="create"] {
+  color: #16a34a; /* verde */
+}
+
+td.capitalize[data-accion="update"] {
+  color: #eab308; /* amarillo */
+}
+
+td.capitalize[data-accion="delete"] {
+  color: #dc2626; /* rojo */
+}
+
+/* === Hover fila === */
+.auditoria-tabla tbody tr:hover {
+  background-color: #f9fafb;
+  transition: background-color 0.2s ease;
+}

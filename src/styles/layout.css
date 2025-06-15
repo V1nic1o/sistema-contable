@@ -1,0 +1,8 @@
+.page-wrapper {
+  padding: 24px;
+  padding-left: 264px; /* 240px sidebar + 24px espacio interno */
+  padding-top: 88px;    /* 64px navbar + 24px espacio interno */
+  min-height: calc(100vh - 64px);
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+}

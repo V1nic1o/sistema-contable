@@ -1,0 +1,212 @@
+/* === ENCABEZADO DE LA PÁGINA === */
+.header-conciliaciones {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.header-conciliaciones h1 {
+  font-size: 26px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+/* === BOTONES DE ACCIÓN PRINCIPALES === */
+.btn.nueva {
+  background-color: #3e8ed0;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn.nueva:hover {
+  background-color: #2566a6;
+}
+
+.btn.importar {
+  background-color: #34a853;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn.importar:hover {
+  background-color: #278f43;
+}
+
+/* === FILTROS === */
+.filtros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.filtros input,
+.filtros select {
+  padding: 9px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  min-width: 160px;
+}
+
+/* === MENSAJES === */
+.mensaje {
+  flex-basis: 100%;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #d9534f;
+}
+
+/* === FORMULARIO CONCILIACIÓN (SI APLICA) === */
+.formulario-conciliacion {
+  background-color: #fff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 32px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.formulario-conciliacion input,
+.formulario-conciliacion textarea {
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  width: 100%;
+  font-family: inherit;
+}
+
+.formulario-conciliacion textarea {
+  resize: vertical;
+  min-height: 80px;
+  grid-column: span 2;
+}
+
+.formulario-conciliacion .btn.guardar {
+  grid-column: span 2;
+  background-color: #007bff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.formulario-conciliacion .btn.guardar:hover {
+  background-color: #0056b3;
+}
+
+/* === TABLA HISTORIAL === */
+.tabla-conciliaciones h2 {
+  font-size: 20px;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.tabla-conciliaciones table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.04);
+}
+
+.tabla-conciliaciones th,
+.tabla-conciliaciones td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.tabla-conciliaciones th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+  color: #444;
+}
+
+.tabla-conciliaciones tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* === ESTADOS === */
+.estado-conciliado {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.estado-pendiente {
+  color: #ffc107;
+  font-weight: bold;
+}
+
+/* === BOTONES DE ACCIÓN POR FILA === */
+.btn.pequeño {
+  padding: 6px 12px;
+  font-size: 12px;
+  background-color: #6f42c1;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn.pequeño:hover {
+  background-color: #5a32a3;
+}
+
+.btn.rojo {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.btn.rojo:hover {
+  background-color: #c0392b;
+}
+
+.tabla-conciliaciones .btn {
+  margin: 2px 4px;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .formulario-conciliacion {
+    grid-template-columns: 1fr;
+  }
+
+  .filtros {
+    flex-direction: column;
+  }
+
+  .tabla-conciliaciones table {
+    font-size: 13px;
+  }
+
+  .btn.pequeño {
+    padding: 5px 10px;
+  }
+}

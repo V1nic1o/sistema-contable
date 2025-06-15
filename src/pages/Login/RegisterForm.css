@@ -1,0 +1,59 @@
+/* src/pages/Login/RegisterForm.css */
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: border-color 0.3s ease;
+}
+
+.input:focus {
+  border-color: #1976d2;
+  outline: none;
+}
+
+.btn {
+  background-color: #2e7d32;
+  color: white;
+  padding: 12px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #1b5e20;
+}
+
+.btn:disabled {
+  background-color: #a5d6a7;
+  cursor: not-allowed;
+}
+
+.mensaje {
+  font-size: 14px;
+  padding: 8px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.mensaje-error {
+  background-color: #fdecea;
+  color: #d32f2f;
+  border: 1px solid #f44336;
+}
+
+.mensaje-success {
+  background-color: #e6f4ea;
+  color: #2e7d32;
+  border: 1px solid #4caf50;
+}

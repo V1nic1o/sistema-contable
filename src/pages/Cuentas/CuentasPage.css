@@ -1,0 +1,103 @@
+.cuentas-page h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.cuentas-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.cuentas-buttons .btn {
+  margin-left: 10px;
+}
+
+.btn.importar {
+  background-color: #17a2b8;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn.agregar {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cuentas-filtros {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.cuentas-filtros input,
+.cuentas-filtros select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.cuentas-tabla table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.04);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.cuentas-tabla th,
+.cuentas-tabla td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.cuentas-tabla th {
+  background-color: #f5f5f5;
+  font-weight: bold;
+}
+
+.cuentas-tabla td.acciones {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.accion {
+  background: none;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0;
+  font-size: 14px;
+}
+
+.accion.editar {
+  color: #007bff;
+}
+
+.accion.editar:hover {
+  text-decoration: underline;
+}
+
+.accion.eliminar {
+  color: #dc3545;
+}
+
+.accion.eliminar:hover {
+  text-decoration: underline;
+}
